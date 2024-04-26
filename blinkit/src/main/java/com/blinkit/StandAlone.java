@@ -71,6 +71,7 @@ public class StandAlone {
 		Thread.sleep(2000);
 		driver.findElement(By.className("CheckoutStrip__TitleText-sc-1fzbdhy-9")).click();
 		System.out.println();
+		System.out.println();
 
 //	List<WebElement> elements = driver.findElements(By.className("SliderProductList__Wrapper-sc-14wck6y-0"));
 //	for(WebElement w:elements)
