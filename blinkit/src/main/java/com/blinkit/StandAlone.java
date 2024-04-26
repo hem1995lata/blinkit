@@ -70,8 +70,10 @@ public class StandAlone {
 		driver.findElement(By.className("otp__input")).sendKeys(otp);
 		Thread.sleep(2000);
 		driver.findElement(By.className("CheckoutStrip__TitleText-sc-1fzbdhy-9")).click();
-		System.out.println();
-		System.out.println();
+//		System.out.println();
+//		System.out.println();
+		
+		
 
 //	List<WebElement> elements = driver.findElements(By.className("SliderProductList__Wrapper-sc-14wck6y-0"));
 //	for(WebElement w:elements)
@@ -82,6 +84,11 @@ public class StandAlone {
 //	prod.findElement(By.className("AddToCart__UpdatedButtonContainer-sc-17ig0e3-0")).click();
 //	driver.findElement(By.cssSelector("img[alt='3 - Fruits & Vegetables']")).click();
 		Thread.sleep(2000);
-		driver.close();
+		
+		driver.findElement(By.className("AddressList__AddressDetails-sc-zt55li-3")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.className("CheckoutStrip__StripContainer-sc-1fzbdhy-8")).click();
+		driver.findElement(By.className("sc-rbbb40-0")).click();
+//		driver.close();
 	}
 }
