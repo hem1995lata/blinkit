@@ -88,7 +88,9 @@ public class StandAlone {
 		driver.findElement(By.className("AddressList__AddressDetails-sc-zt55li-3")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.className("CheckoutStrip__StripContainer-sc-1fzbdhy-8")).click();
-		driver.findElement(By.className("sc-rbbb40-0")).click();
+//		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();",
+		driver.findElement(By.className("sc-rbbb40-0")));
 //		driver.close();
 	}
 }
