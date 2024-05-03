@@ -16,7 +16,7 @@ import com.practicepom.pageobject.ProductCatalog;
 
 	public class ErrorValidation extends BaseTest{
 		
-		@Test
+		@Test(groups= {"ErrorHandaling"})
 		public void LoginErrorValidation() throws IOException, InterruptedException
 		{
 		
