@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practicepom.SubmitOrderTest">
+      <class name="com.practicepom.ErrorValidation">
         <methods>
-          <include name="OrderHistoryTest"/>
+          <include name="LoginErrorValidation"/>
           <include name="tearDown"/>
+          <include name="StandAloneTest"/>
           <include name="launchApplication"/>
-          <include name="SubmitOrder"/>
         </methods>
-      </class> <!-- com.practicepom.SubmitOrderTest -->
+      </class> <!-- com.practicepom.ErrorValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
